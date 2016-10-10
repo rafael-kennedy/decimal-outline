@@ -1,6 +1,6 @@
 {
   "name": "tiered-numbering",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package to handle tiered numbering or decimal outline format numbers.",
   "main": "tiered-numbering.js",
   "scripts": {
