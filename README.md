@@ -1,4 +1,6 @@
 # Tiered Numbering
+[![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+
 A library for handling tiered numbering, also known as decimal outline notation. This is numbering in the form: 1.1.1.1. Currently, these have to be processed as strings, though it would be much more useful to treat them as arrays, in terms of comparing, iterating, and performing basic mathematical functions on them.
 This library exposes a function that takes a string as an input, and returns an object with certain mathematical and comparison properties, and that can return an array representation of the data.
 
