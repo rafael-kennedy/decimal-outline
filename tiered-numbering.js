@@ -1,11 +1,9 @@
-module.exports = (function(){
+module.exports = (function () {
   // Private properties
   var length = {}
   var delim = {}
 
-
-  return function Outline(str, type) {
-
+  return function Outline (str, type) {
     // Math utility functions
     function math (inObj, opperand) {
       if (typeof inObj === 'string') {
@@ -24,7 +22,7 @@ module.exports = (function(){
           break
         case '-':
           for (var i = 0; i < out.length; i++) {
-            out[i] -= inCache[i]
+            out[i] = inCache[i] - out[i]
           }
           break
         case '*':
@@ -77,37 +75,35 @@ module.exports = (function(){
       length[type] = array.length
     }
 
-
-
     var obj = {
       type: type,
 
       // accessor functions for
-      get depth() {
+      get depth () {
         return length[type]
       },
-      set depth(num) {
+      set depth (num) {
         if (num > length[type]) {
           length[type] = num
         }
       },
 
       // accessor functions for delimiters
-      get delim() {
+      get delim () {
         return delim[type]
       },
-      set delim(str) {
+      set delim (str) {
         delim[type] = str
       },
 
       shortArray: shortArray,
-      get array() {
+      get array () {
         padArray()
         return array
       },
 
       // string output
-      get string() {
+      get string () {
         return shortArray.join(delim[type])
       },
 
@@ -152,7 +148,7 @@ module.exports = (function(){
         aArray = this.array
         bArray = inObj.array
         for (var i = 0; i < aArray.length; i++) {
-          if (aArray[i] === bArray[i]) {continue}
+          if (aArray[i] === bArray[i]) { continue }
           else return aArray[i] - bArray[i]
         }
         return 0
@@ -160,4 +156,4 @@ module.exports = (function(){
 
     }
     return obj
-  }})()
+  } })()

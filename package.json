@@ -1,0 +1,29 @@
+{
+  "name": "tiered-numbering",
+  "version": "1.0.0",
+  "description": "A package to handle tiered numbering or decimal outline format numbers.",
+  "main": "tiered-numbering.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafael-kennedy/tiered-numbering.git"
+  },
+  "keywords": [
+    "javascript",
+    "math",
+    "decimal",
+    "numbering",
+    "outline",
+    "format",
+    "version",
+    "compare"
+  ],
+  "author": "Rafael Kennedy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rafael-kennedy/tiered-numbering/issues"
+  },
+  "homepage": "https://github.com/rafael-kennedy/tiered-numbering#readme"
+}
